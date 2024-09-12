@@ -1,0 +1,570 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.my-nav{
+width: 100%;
+background-color: antiquewhite !important;
+position: sticky !important;
+top: 0px !important;
+z-index: 1 !important;
+}
+.nav-link{
+font-size: 20px;
+color: black !important;
+font-weight: 600;
+margin: 0px 10px !important;
+margin-top: 15px !important;
+}
+
+.navbar-brand{
+font-size: 30px !important;
+font-weight: 900;
+}
+
+ul li a:hover{
+  color: green !important;
+}
+
+
+/* ------------------Home Section---------------- */
+
+.carousel-item {
+background: no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+.image{
+  height: 90vh !important;
+  
+}
+.carousel-caption{
+  position: absolute;
+  top: 30%;
+}
+.heading{
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.text{
+  font-size: 20px;
+}
+.btn{
+  width: 20%;
+  height: 60px;
+  font-size: 20px !important;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 20px !important;
+}
+.btn:hover{
+  background-color: black;
+}
+
+
+@media only screen and (width<1000px){
+  .heading{
+       font-size: 50px !important;
+   }
+   .text{
+      font-size: 20px;
+   }
+   .btn{
+    width: 80px;
+    height: 30px;
+    font-size: 16px !important;
+    padding: 0 !important;
+   }
+}
+@media only screen and (width<600px){
+  .heading{
+       font-size: 50px !important;
+   }
+   .text{
+      font-size: 20px;
+   }
+   .btn{
+    width: 80px;
+    height: 30px;
+    font-size: 16px !important;
+    padding: 0 !important;
+   }
+}
+
+/* ------------------About--------------- */
+
+#About{
+  background-color: whitesmoke;
+}
+.container1{
+  display: flex;
+}
+.about1{
+  height: 80vh;
+  flex-basis: 50%;
+  padding: 25px 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 600 !important;
+  padding: 10px;
+}
+h2{
+  font-size: 25px;
+  padding: 10px;
+}
+h2 span{
+  color: green !important;
+  font-weight: bold !important;
+}
+.button{
+  width: 25%;
+  height: 50px !important;
+  background-color: black;
+  color: white;
+  padding-left: 5px !important;
+  border-radius: 20px;
+}
+
+.about2{
+  height: 80vh;
+  flex-basis: 40%;
+  margin-top: 20px;
+}
+.aboutimg{
+  width: 80%;
+  height: 70%;
+  margin: 30px 20px;
+  box-shadow: 2px 3px 4px 3px rgb(124, 252, 0) !important;
+}
+.button{
+  width: 30%;
+  height: 30px;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 16px;
+}
+.button:hover{
+  background-color: transparent;
+  color: black;
+}
+
+@media only screen and (width<800px){
+  .container1{
+    flex-direction: column;
+  }
+}
+
+/* -------------------Services---------------- */
+
+#Services{
+  background-color: whitesmoke;
+}
+.grid-container{
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.grid-container div{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+
+.grid-icons{
+  width: 30px;
+  height: 100px;
+}
+
+.light{
+  padding: 20px !important;
+}
+.grid-button{
+  width: 130px;
+  height: 50px !important;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding-left: 5px !important;
+}
+
+  .card1:hover{
+    color: white;
+    background-image: url(service-1.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+  
+  .card2:hover{
+    color: white;
+    background-image: url(service-2.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+  .card3:hover{
+    color: white;
+    background-image: url(service-3.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+  .card4:hover{
+    color: white;
+    background-image: url(service-4.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+  .card5:hover{
+    color: white;
+    background-image: url(service-5.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+  .card6:hover{
+    color: white;
+    background-image: url(service-6.jpg);
+    background-size: cover;
+    background: linear-gradient(0, 0, 0, 0.3) !important;
+  }
+
+.overlay:hover{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+@media only screen and (width<600px){
+  .grid-container{
+      grid-template-columns: auto;
+  }
+}
+
+/* ----------------Gallery------------------ */
+
+#Gallery{
+  width: 100%;
+  background-color: black;
+}
+
+ .gallery-box{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  gap: 10px 30px;
+} 
+ 
+.Garden1 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery1.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden2 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery6.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden3 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery3.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden4 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery4.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden5 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery5.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden6 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery2.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden7 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery7.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden8 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  background-image: url(gallery8.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+}
+
+.Garden1-content, .Garden2-content, .Garden3-content, .Garden4-content,
+.Garden5-content, .Garden6-content, .Garden7-content, .Garden8-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%; 
+  background-color: rgba(19, 233, 40, 0.715);
+  color: aliceblue;
+  text-align: center;
+  overflow: hidden; 
+  transition: all 0.5s ease-in-out; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 10px;
+  box-sizing: border-box; 
+  opacity: 0;
+  font-size: 20px !important;
+}
+
+.Garden1:hover .Garden1-content, .Garden2:hover .Garden2-content, .Garden3:hover .Garden3-content,
+.Garden4:hover .Garden4-content, .Garden5:hover .Garden5-content, .Garden6:hover .Garden6-content,
+.Garden7:hover .Garden7-content, .Garden8:hover .Garden8-content {
+  transform: translateY(100%); 
+  opacity: 1; 
+}
+
+.Garden1:hover, .Garden2:hover, .Garden3:hover, .Garden4:hover,
+.Garden5:hover, .Garden6:hover, .Garden7:hover, .Garden8:hover{
+transform: scale(1.1);
+transition-duration: 2s;
+}
+
+@media only screen and (width<600px){
+  .gallery-box{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* --------------team members ----------------- */
+
+ .container4{
+  background-color: whitesmoke;
+} 
+.team-box{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  gap: 10px 20px;
+
+}
+.team1 {
+  width: 70%;
+  height: 500px;
+  position: relative;
+  background-image: url(team-1.jpg);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+  border-radius: 20px;
+}
+.team2 {
+  width: 70%;
+  height: 500px;
+  position: relative;
+  background-image: url(team-2.jpg);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+  border-radius: 20px;
+}
+.team3 {
+  width: 70%;
+  height: 500px;
+  position: relative;
+  background-image: url(team-3.jpg);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+  border-radius: 20px;
+}
+
+.team1-content, .team2-content, .team3-content {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 100%; 
+  background-color: rgb(191, 238, 143);
+  color: black;
+  text-align: center;
+  overflow: hidden; 
+  transition: all 0.5s ease-in-out; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box; 
+  opacity: 0;
+  font-size: 20px !important;
+}
+
+.team1:hover .team1-content, .team2:hover .team2-content, .team3:hover .team3-content{
+  transform: translateY(-100%); 
+  opacity: 1; 
+}
+.team-main-icons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-icons{
+  font-size: 25px;
+  color: black;
+}
+
+@media only screen and (width<600px){
+  .team-box{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* -----------Contact Us------------------- */
+.footer{
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer div{
+  margin: 20px;
+  padding: 10px;
+  height: 40vh;
+}
+.social-icons{
+  font-size: 30px;
+  color: black;
+}
+.icons{
+  color: black !important;
+}
+.icons:hover{
+  transform: translate(30px);
+  transition-duration: 1s;
+}
+
+.footer, a:hover{
+  color: green  !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (width<800px){
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (width<600px){
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container6{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
