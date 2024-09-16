@@ -3,12 +3,11 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.my-nav{
+#fixednavabar{
 width: 100%;
 background-color: antiquewhite !important;
-position: sticky !important;
-top: 0px !important;
-z-index: 1 !important;
+position: fixed !important;
+z-index: 2;
 }
 .nav-link{
 font-size: 20px;
