@@ -26,34 +26,46 @@ ul li a:hover{
   color: green !important;
 }
 
+.logo {
+  height: 35px;  /* Adjust logo height */
+  width: auto;   /* Keeps aspect ratio */
+  margin-right: 10px; /* Adds spacing between logo and text */
+  vertical-align: middle; /* Aligns logo with text */
+}
+
+
 
 /* ------------------Home Section---------------- */
 
 .carousel-item {
-background: no-repeat center center scroll;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
 
-}
-.image{
+.image {
   height: 90vh !important;
-  
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  width: 100%;
 }
-.carousel-caption{
+
+/* Caption Positioning */
+.carousel-caption {
   position: absolute;
   top: 30%;
 }
-.heading{
+
+/* Headings & Text */
+.heading {
   font-size: 70px;
   font-weight: 900;
 }
 
-.text{
+.text {
   font-size: 20px;
 }
-.btn{
+
+/* Buttons */
+.btn {
   width: 20%;
   height: 60px;
   font-size: 20px !important;
@@ -61,106 +73,164 @@ background-size: cover;
   color: white;
   border-radius: 20px !important;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: black;
 }
 
+/* ✅ Responsive Adjustments */
+@media only screen and (max-width: 1000px) {
+  .heading {
+    font-size: 50px !important;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 16px !important;
+  }
+  .image {
+    height: 70vh !important; /* Decrease image height */
+  }
+}
 
-@media only screen and (width<1000px){
-  .heading{
-       font-size: 50px !important;
-   }
-   .text{
-      font-size: 20px;
-   }
-   .btn{
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 40px !important;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .btn {
+    width: 90px;
+    height: 35px;
+    font-size: 14px !important;
+  }
+  .image {
+    height: 60vh !important; /* Further decrease image height */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 35px !important;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .btn {
     width: 80px;
     height: 30px;
-    font-size: 16px !important;
-    padding: 0 !important;
-   }
+    font-size: 12px !important;
+  }
+  .image {
+    height: 50vh !important; /* Reduce height further for mobile */
+  }
 }
-@media only screen and (width<600px){
-  .heading{
-       font-size: 50px !important;
-   }
-   .text{
-      font-size: 20px;
-   }
-   .btn{
-    width: 80px;
-    height: 30px;
-    font-size: 16px !important;
-    padding: 0 !important;
-   }
-}
+
 
 /* ------------------About--------------- */
 
-#About{
-  background-color: whitesmoke;
-}
-.container1{
-  display: flex;
-}
-.about1{
-  height: 80vh;
-  flex-basis: 50%;
-  padding: 25px 50px;
-  margin-top: 20px;
-  margin-left: 50px;
+
+#About {
+    background-color: whitesmoke;
+    padding: 50px 20px;
 }
 
-h1{
-  font-size: 30px;
-  font-weight: 600 !important;
-  padding: 10px;
-}
-h2{
-  font-size: 25px;
-  padding: 10px;
-}
-h2 span{
-  color: green !important;
-  font-weight: bold !important;
-}
-.button{
-  width: 25%;
-  height: 50px !important;
-  background-color: black;
-  color: white;
-  padding-left: 5px !important;
-  border-radius: 20px;
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.about2{
-  height: 80vh;
-  flex-basis: 40%;
-  margin-top: 20px;
-}
-.aboutimg{
-  width: 80%;
-  height: 70%;
-  margin: 30px 20px;
-  box-shadow: 2px 3px 4px 3px rgb(124, 252, 0) !important;
-}
-.button{
-  width: 30%;
-  height: 30px;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-size: 16px;
-}
-.button:hover{
-  background-color: transparent;
-  color: black;
+/* Left Section */
+.about1 {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
 }
 
-@media only screen and (width<800px){
-  .container1{
-    flex-direction: column;
-  }
+h1 {
+    font-size: 30px;
+    font-weight: 600;
 }
+
+h2 {
+    font-size: 25px;
+}
+
+h2 span {
+    color: green;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Right Section */
+.about2 {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+.aboutimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 3px rgb(124, 252, 0);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about1, .about2 {
+        max-width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .aboutimg {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
 
 /* -------------------Services---------------- */
 
@@ -516,46 +586,114 @@ transition-duration: 2s;
 }
 
 /* -----------Contact Us------------------- */
-.footer{
-  width: 100%;
-  background-color: antiquewhite;
+.footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: antiquewhite;
+  padding: 40px 20px;
 }
-.footer div{
+
+/* Individual Footer Sections */
+.footer-section {
+  flex: 1;
+  max-width: 250px;
+  min-width: 200px;
   margin: 20px;
-  padding: 10px;
-  height: 40vh;
+  text-align: left;
 }
-.social-icons{
-  font-size: 30px;
+
+/* Headings */
+.footer-section h2 {
   color: black;
-}
-.icons{
-  color: black !important;
-}
-.icons:hover{
-  transform: translate(30px);
-  transition-duration: 1s;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.footer, a:hover{
-  color: green  !important;
-  text-decoration: none !important;
+/* Icons and Links */
+.icons {
+  color: black;
+  margin-bottom: 10px;
 }
 
-@media only screen and (width<800px){
-  .footer{
-    flex-direction: column;
-    align-items: center;
+.icons a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: green;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons {
+  font-size: 24px;
+  color: black;
+  transition: 0.3s;
+}
+
+.social-icons:hover {
+  color: green;
+  transform: scale(1.1);
+}
+
+/* Newsletter Input */
+.newsletter-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.subscribe-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: green;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .social-links {
+      justify-content: center;
   }
 }
-@media only screen and (width<600px){
-  .footer{
-    flex-direction: column;
-    align-items: center;
+
+@media screen and (max-width: 600px) {
+  .footer-section {
+      min-width: 100%;
+      padding: 10px;
   }
 }
+
 .container6{
   background-color: black;
 }
